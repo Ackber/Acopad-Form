@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Complete Form</title>
+
+</head>
+
+<body class="bg-gray-100 p-4 sm:p-8">
+    <div class="bg-white p-6 shadow-lg rounded-lg mx-auto my-8 max-w-4xl w-full">
+        <!-- Page 1 Content -->
+        <form id="feedback-form">
+            <div class="flex justify-center items-center mb-6">
+                <img src="./logo-aco.png"
+                    alt="Logo of the organization, a stylized face in profile with a split dark and light side, representing duality"
+                    class="mr-4">
+                <h1 class="text-xl font-bold text-center">QUESTIONNAIRE D’EVALUATION<br>DE VOTRE FORMATION</h1>
+            </div>
+            <p class="mb-4">
+                Pour nous aider à améliorer la qualité des formations que nous organisons, nous vous remercions de bien
+                vouloir consacrer quelques instants à compléter ce questionnaire.
+            </p>
+            <p class="mb-4">
+                Par vos remarques et vos suggestions, vous contribuerez à l'évolution permanente du stage que vous avez
+                suivi.
+            </p>
+            <div class="border-2 border-gray-300 p-4 mb-6">
+                <h4 class="text-lg font-semibold mb-2"><u>Intitulé du stage</u>: FORMATION DE PREPARATION A LA
+                    QUALIFICATION
+                    PACTE AXE 2</h4>
+                <p class="mb-1 underline">Dates de la formation :</p>
+                <p class="mb-1 underline">Réalisé par :</p>
+                <p class="mb-1">- <u>Organisme de Formation</u> : ACOPAD</p>
+                <p class="mb-1">- <u>Lieu du stage</u> : 10 Avenue de Fontcouverte – 84000 AVIGNON</p>
+                <p class="mb-1"><u>Animé par</u> (nom du ou des formateur(s)) :</p>
+            </div>
+
+            <div class="mb-4" id="section1">
+                <h4 class="font-semibold mb-2 underline">1-Comment avez-vous eu l'information sur cette formation :</h4>
+
+                <label class="block mb-2">
+                    <input type="checkbox" class="mr-2" name="sourceInfo">Dépliant du centre de formation
+                </label>
+                <label class="block mb-2">
+                    <input type="checkbox" class="mr-2" name="sourceInfo">Pôle Emploi
+                </label>
+                <label class="block mb-2">
+                    <input type="checkbox" class="mr-2" name="sourceInfo">Mission Locale
+                </label>
+                <label class="block mb-2">
+                    <input type="checkbox" class="mr-2" name="sourceInfo">Bouche-à-oreille
+                </label>
+                <label class="block mb-2">
+                    <input type="checkbox" class="mr-2" name="sourceInfo">Le Conseil Général
+                </label>
+                <label class="block mb-2">
+                    <input type="checkbox" class="mr-2" name="sourceInfo">Le Conseil Départemental
+                </label>
+                <label class="block">
+                    <span>Autre (précisez) :</span>
+                    <input type="text" id="otherSourceInfo" class="mt-1 p-2 border-2 border-gray-300 rounded">
+                </label>
+
+            </div>
+
+
+            <!-- Section 2 -->
+            <div class="mb-4" id="section2">
+                <h4 class="font-semibold mb-2 underline">2- Qui a pris l'initiative de votre inscription :</h4>
+
+                <label class="block mb-2">
+                    <input type="radio" name="initiative" class="mr-2">Vous
+                </label>
+                <label class="block mb-2">
+                    <input type="radio" name="initiative" class="mr-2">Votre Conseiller en Insertion professionnelle
+                </label>
+                <label class="block mb-2">
+                    <input type="radio" name="initiative" class="mr-2">Ensemble
+                </label>
+
+            </div>
+
+            <!-- Section 3: Evaluation Table -->
+            <div class="mb-6" id="section3">
+
+                <h4 class="font-semibold mb-2 underline">3- Cochez la case correspondante à votre appréciation :</h4>
+                <div class="table-responsive mt-6">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Critères</th>
+
+                            </tr>
+                            <tr>
+                                <th>Très bien</th>
+                                <th>Bien</th>
+                                <th>Assez bien</th>
+                                <th>Insuffi<br>sant</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 p-2">Information avant la formation</td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="info_avant_formation" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="info_avant_formation" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="info_avant_formation" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="info_avant_formation" /></td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-2">Délai d'attente entre votre demande et la
+                                    participation au stage</td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="delai_attente" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="delai_attente" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="delai_attente" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="delai_attente" /></td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-2">Organisation du stage</td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="organisation_stage" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="organisation_stage" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="organisation_stage" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="organisation_stage" /></td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-2">Horaires et rythme</td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="horaires_rythme" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="horaires_rythme" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="horaires_rythme" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="horaires_rythme" /></td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-2">Animation et relation avec les formateurs</td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="animation_relation" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="animation_relation" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="animation_relation" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="animation_relation" /></td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-2">Matériels mis à disposition</td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="materiels_disposition" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="materiels_disposition" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="materiels_disposition" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="materiels_disposition" /></td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-2">Supports pédagogiques</td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="supports_pedagogiques" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="supports_pedagogiques" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="supports_pedagogiques" /></td>
+                                <td class="border border-gray-300 p-2 text-center"><input type="radio"
+                                        name="supports_pedagogiques" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Section 4: Global Appreciation -->
+            <div class="mb-4" id="section4">
+                <h4 class="font-semibold mb-2 underline">4- Globalement, diriez-vous que la formation :</h4>
+
+                <label class="block mb-2">
+                    <input type="radio" name="global_appreciation" class="mr-2">a répondu complètement à vos
+                    attentes
+                </label>
+                <label class="block mb-2">
+                    <input type="radio" name="global_appreciation" class="mr-2">a répondu en grande partie à vos
+                    attentes, même s'il reste quelques points à creuser
+                </label>
+                <label class="block mb-2">
+                    <input type="radio" name="global_appreciation" class="mr-2">a partiellement répondu à vos
+                    attentes,
+                    et reste avec beaucoup de questions
+                </label>
+                <label class="block mb-2">
+                    <input type="radio" name="global_appreciation" class="mr-2">n'a pas répondu à vos attentes
+                </label>
+
+            </div>
+            <!-- Section 5: Overall Training Evaluation -->
+            <div class="mb-4" id="section5">
+                <h4 class="font-semibold mb-2 underline">5- Globalement, diriez-vous que la formation :</h4>
+
+                <label class="block mb-2">
+                    <input type="radio" name="overall_training" class="mr-2">a traité tous les objectifs annoncés
+                </label>
+                <label class="block mb-2">
+                    <input type="radio" name="overall_training" class="mr-2">a traité la plupart des objectifs
+                    annoncés,
+                    tout en prenant en compte de nos questions spécifiques
+                </label>
+                <label class="block mb-2">
+                    <input type="radio" name="overall_training" class="mr-2">n'a pas traité tous les objectifs
+                    annoncés
+                </label>
+                <label class="block mb-2">
+                    <input type="radio" name="overall_training" class="mr-2">n'a pas traité les objectifs annoncés
+                </label>
+
+            </div>
+            <!-- Section 6: Adjectives Describing the Training -->
+            <div class="mb-6" id="section6">
+                <h4 class="font-semibold mb-2 underline">6- Soulignez tous les adjectifs qui expriment ce que vous
+                    pensez
+                    globalement de cette formation :</h4>
+                <h4 class="font-semibold mb-2">(3 à 4 choix maximum)</h4>
+                <div class="border-2 border-gray-300 p-4">
+                    <div class="flex flex-wrap justify-evenly">
+                        <div class="flex flex-col">
+                            <label class="inline-flex items-center mb-2">
+                                <input type="checkbox" name="adjectives" class="mr-2">passionnant
+                            </label>
+                            <label class="inline-flex items-center mb-2">
+                                <input type="checkbox" name="adjectives" class="mr-2">concret
+                            </label>
+                            <label class="inline-flex items-center mb-2">
+                                <input type="checkbox" name="adjectives" class="mr-2">intéressant
+                            </label>
+                            <label class="inline-flex items-center mb-2">
+                                <input type="checkbox" name="adjectives" class="mr-2">facile
+                            </label>
+                            <label class="inline-flex items-center mb-2">
+                                <input type="checkbox" name="adjectives" class="mr-2">rapide
+                            </label>
+                            <label class="inline-flex items-center mb-2">
+                                <input type="checkbox" name="adjectives" class="mr-2">théorique
+                            </label>
+                            <label class="inline-flex items-center mb-2">
+                                <input type="checkbox" name="adjectives" class="mr-2">pratique
+                            </label>
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="inline-flex items-center mb-2">
+                                <input type="checkbox" name="adjectives" class="mr-2">scolaire
+                            </label>
+                            <label class="inline-flex items-center mb-2">
+                                <input type="checkbox" name="adjectives" class="mr-2">difficile
+                            </label>
+                            <label class="inline-flex items-center mb-2">
+                                <input type="checkbox" name="adjectives" class="mr-2">fatigant
+                            </label>
+                            <label class="inline-flex items-center mb-2">
+                                <input type="checkbox" name="adjectives" class="mr-2">court
+                            </label>
+                            <label class="inline-flex items-center mb-2">
+                                <input type="checkbox" name="adjectives" class="mr-2">long
+                            </label>
+                            <label class="inline-flex items-center mb-2">
+                                <input type="checkbox" name="adjectives" class="mr-2">utile
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section 7: Opinions on Teaching Methods -->
+            <div class="mb-6" id="section7">
+                <h4 class="font-semibold mb-2 underline">7- Parmi les opinions suivantes, cochez celle(s) qui
+                    caractérisent
+                    pour vous
+                    la méthode d’enseignement utilisée ?</h4>
+
+                <label class="block mb-2">
+                    <input type="checkbox" name="teaching_methods" value="allows_expression" class="mr-2">Elle
+                    permet à
+                    chacun de s'exprimer, d'aller à son rythme
+                </label>
+                <label class="block mb-2">
+                    <input type="checkbox" name="teaching_methods" value="requires_participation" class="mr-2">Elle
+                    demande une forte participation de chacun
+                </label>
+                <label class="block mb-2">
+                    <input type="checkbox" name="teaching_methods" value="too_theoretical" class="mr-2">Elle est
+                    trop
+                    théorique
+                </label>
+                <label class="block mb-2">
+                    <input type="checkbox" name="teaching_methods" value="practical_exercises" class="mr-2">Elle
+                    fait
+                    largement appel à des exercices, cas et exemples concrets
+                </label>
+                <label class="block mb-2">
+                    <input type="checkbox" name="teaching_methods" value="not_adapted_project" class="mr-2">Elle
+                    n'est
+                    pas adaptée à mon projet
+                </label>
+                <label class="block mb-2">
+                    <input type="checkbox" name="teaching_methods" value="adapted_project" class="mr-2">Elle est
+                    adaptée
+                    à mon projet
+                </label>
+                <div class="mt-4">
+                    <label for="other_remarks" class="block mb-2">Autres remarques :</label>
+                    <textarea id="other_remarks" name="other_remarks" rows="4"
+                        class="p-2 w-full border-2 border-gray-300 rounded-md"></textarea>
+
+                    <!-- Section 8: Most Interesting Aspect of the Training -->
+                    <div class="mb-4" id="section8">
+                        <h4 class="font-semibold mb-2 underline">8- Qu'est-ce qui vous a le plus intéressé(e) dans
+                            la
+                            formation ?
+                        </h4>
+                        <textarea rows="4" class="w-full p-2 border-2 border-gray-300 rounded"
+                            name="most_interesting"></textarea>
+                    </div>
+
+                    <!-- Section 9: Least Interesting Aspect of the Training -->
+                    <div class="mb-4" id="section9">
+                        <h4 class="font-semibold mb-2 underline">9- Qu'est-ce qui vous a le moins intéressé(e) dans
+                            la
+                            formation ?
+                        </h4>
+                        <textarea rows="4" class="w-full p-2 border-2 border-gray-300 rounded"
+                            name="least_interesting"></textarea>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Star Rating Section -->
+            <div class="mb-6 p-4 border-2 border-gray-300 rounded-lg">
+                <div class="flex justify-center mb-4">
+                    <div class="star-rating" id="section10">
+                        <input class="star-input" type="radio" id="5-stars" name="rating" value="5" />
+                        <label class="star" for="5-stars">&#9733;</label>
+                        <input class="star-input" type="radio" id="4-stars" name="rating" value="4" />
+                        <label class="star" for="4-stars">&#9733;</label>
+                        <input class="star-input" type="radio" id="3-stars" name="rating" value="3" />
+                        <label class="star" for="3-stars">&#9733;</label>
+                        <input class="star-input" type="radio" id="2-stars" name="rating" value="2" />
+                        <label class="star" for="2-stars">&#9733;</label>
+                        <input class="star-input" type="radio" id="1-star" name="rating" value="1" />
+                        <label class="star" for="1-star">&#9733;</label>
+                    </div>
+                </div>
+                <h4 class="font-semibold mb-4 underline">10- Auriez-vous des recommandations pour améliorer nos
+                    formations?
+                </h4>
+                <textarea rows="4" class="w-full p-2 border-2 border-gray-300 rounded-lg"
+                    name="improvementSuggestions"></textarea>
+            </div>
+
+            <!-- Identity Section -->
+            <div class="border-2 border-gray-300 p-4 mb-6">
+                <h4 class="font-semibold mb-4">Votre identité (facultative) :</h4>
+
+                <div class="mb-4" id="section11">
+                    <label class="block mb-2">
+                        <span class="inline-block mb-1"><u> Nom</u> :</span>
+                        <input type="text"
+                            class="form-input mt-1 block w-full bg-transparent border-none focus:outline-none"
+                            placeholder="............................................................................................................"
+                            style="caret-color: black;">
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2">
+                        <span class="inline-block mb-1"><u> Prénom</u> :</span>
+                        <input type="text"
+                            class="form-input mt-1 block w-full bg-transparent border-none focus:outline-none"
+                            placeholder="............................................................................................................"
+                            style="caret-color: black;">
+                    </label>
+                </div>
+                <div class="mb-6">
+                    <label class="block mb-2">
+                        <span class="inline-block mb-1"><u> Adresse</u> :</span>
+                        <input type="text"
+                            class="form-input mt-1 block w-full bg-transparent border-none focus:outline-none"
+                            placeholder="............................................................................................................"
+                            style="caret-color: black;">
+                    </label>
+                </div>
+
+
+
+            </div>
+
+            <!-- Submit Button -->
+            <div class="flex justify-end">
+                <button type="submit"
+                    class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none">Envoyer
+                    mes réponses</button>
+            </div>
+        </form>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDVIKUICJHGva6zgacusvJoRGReFECZXvM",
+            authDomain: "trainee-satisfaction-surve.firebaseapp.com",
+            projectId: "trainee-satisfaction-surve",
+            storageBucket: "trainee-satisfaction-surve.appspot.com",
+            messagingSenderId: "921959289704",
+            appId: "1:921959289704:web:02a6d5a985aa6a08eefcdd",
+            measurementId: "G-NTYM7R5YSZ"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const analytics = getAnalytics(app);
+
+
+        document.getElementById('feedback-form').addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent the default form submit action
+
+            let isValid = true;
+            let validationMessages = [];
+
+            // Helper function to add error messages
+            function addError(message) {
+                validationMessages.push(message);
+                isValid = false;
+            }
+
+            // Section 1 Validation
+            const sourceInfoCheckboxes = document.querySelectorAll('#section1 input[type="checkbox"]');
+            const otherSourceInfo = document.querySelector('#section1 input[type="text"]').value.trim();
+            if (!Array.from(sourceInfoCheckboxes).some(cb => cb.checked) && otherSourceInfo === '') {
+                validationMessages.push('Vous devez répondre à toutes les questions.');
+            }
+
+            // Validate Sections 2, 4, and 5
+            function validateRadioSection(sectionId, errorMessage) {
+                const selectedRadio = document.querySelector(`#${sectionId} input[type="radio"]:checked`);
+                if (!selectedRadio) {
+                    addError(errorMessage);
+                }
+            }
+
+
+            validateRadioSection('section2', 'Question 2: Vous devez sélectionner au moins 1 réponse.');
+
+
+            // Section 3 (Evaluation Table) Validation
+
+            function validateSection3() {
+                // Define the different names of your radio button groups
+                const criteriaNames = [
+                    "info_avant_formation",
+                    "delai_attente",
+                    "organisation_stage",
+                    "horaires_rythme",
+                    "animation_relation",
+                    "materiels_disposition",
+                    "supports_pedagogiques"
+                ];
+
+                let isAnyGroupUnchecked = false;
+
+                // Loop through each group name and check if at least one radio button is checked
+                criteriaNames.forEach(name => {
+                    const radioGroup = document.querySelectorAll(`input[name="${name}"]:checked`);
+                    if (radioGroup.length === 0) {
+                        // If no radio button is checked, set the flag to true
+                        isAnyGroupUnchecked = true;
+                    }
+                });
+
+                // If any group is unchecked, add one generic error message
+                if (isAnyGroupUnchecked) {
+                    addError("Question 3: Vous devez répondre à toutes les questions.");
+                }
+            }
+
+            // Call this function within your form's submit event listener
+            validateSection3();
+
+
+            // Then you can call this function in your event listener before form submission:
+            validateSection3();
+
+            // Validate Sections  4, and 5
+            function validateRadioSection(sectionId, errorMessage) {
+                const selectedRadio = document.querySelector(`#${sectionId} input[type="radio"]:checked`);
+                if (!selectedRadio) {
+                    addError(errorMessage);
+                }
+            }
+
+
+
+            validateRadioSection('section4', 'Question 4: Vous devez sélectionner au moins 1 réponse.');
+            validateRadioSection('section5', 'Question 5: Vous devez sélectionner au moins 1 réponse.');
+
+
+
+
+            // Section 6 Validation
+            const adjectivesCheckboxes = document.querySelectorAll('#section6 input[type="checkbox"]:checked');
+            if (adjectivesCheckboxes.length < 3 || adjectivesCheckboxes.length > 4) {
+                addError('Question 6: Veuillez sélectionner entre 3 et 4 adjectifs.');
+            }
+
+            // Section 7 Validation
+            const teachingMethodsCheckboxes = document.querySelectorAll('#section7 input[type="checkbox"]');
+            const otherTeachingMethods = document.querySelector('#section7 textarea').value.trim();
+            if (!Array.from(teachingMethodsCheckboxes).some(cb => cb.checked) && otherTeachingMethods === '') {
+                addError('Question 7: Veuillez sélectionner au moins une méthode ou fournir des remarques.');
+            }
+
+            // Section 8 Validation
+            const mostInteresting = document.querySelector('#section8 textarea').value.trim();
+            if (mostInteresting === '') {
+                addError('Question 8: Vous devez répondre à toutes les questions.');
+            }
+
+            // Section 9 Validation
+            const leastInteresting = document.querySelector('#section9 textarea').value.trim();
+            if (leastInteresting === '') {
+                addError('Question 9: Vous devez répondre à toutes les questions.');
+            }
+
+            // Section 10 Validation
+
+            const starRating = document.querySelector('input[name="rating"]:checked');
+            const improvementTextarea = document.querySelector('textarea[name="improvementSuggestions"]'); // make sure the selector is correct
+
+            // Check if a star rating was provided
+            if (!starRating) {
+                validationMessages.push('Section 10: Veuillez fournir une note en étoiles pour la formation.');
+            } else {
+                // If the rating is less than 5 stars, check if the textarea is empty
+                if (starRating.value !== '5' && (!improvementTextarea || improvementTextarea.value.trim() === '')) {
+                    // Prompt for improvement text only if the rating is less than 5 stars
+                    validationMessages.push('Section 10: Veuillez fournir des recommandations si la note est inférieure à 5 étoiles.');
+                }
+            }
+
+
+
+            // If there are validation messages, alert the first one and return
+            if (validationMessages.length > 0) {
+                alert(validationMessages[0]);
+                return;
+            }
+
+            const formData = new FormData(e.target);
+            const formProps = Object.fromEntries(formData);
+
+            // Proceed with form submission if valid
+            try {
+                const docRef = await addDoc(collection(db, "responses"), formProps);
+                console.log("Document written with ID: ", docRef.id);
+                alert('Merci pour votre avis!'); // Success message
+            } catch (error) {
+                console.error("Error adding document: ", error);
+                alert('Failed to submit feedback. Please try again.'); // Error message
+            }
+        });
+
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

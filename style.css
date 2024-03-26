@@ -1,0 +1,120 @@
+.star-rating {
+    direction: rtl;
+    font-size: 2em;
+    unicode-bidi: bidi-override;
+    display: inline-block;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label.star {
+    color: #ddd;
+    cursor: pointer;
+}
+
+.star-rating label.star:hover,
+.star-rating label.star:hover~label.star,
+.star-rating input[type="radio"]:checked~label.star {
+    color: #ffc107;
+}
+
+table {
+    width: 100%;
+    /* Adjust table width as necessary */
+    table-layout: fixed;
+    /* Ensures the table honors your width settings */
+
+    /* Optional: removes space between cells */
+}
+
+th {
+
+
+    border: 1px solid #d1d5db;
+    /* Gray border */
+    text-align: center;
+
+}
+
+@media (max-width: 768px) {
+    .star-rating {
+        font-size: 1.5em;
+        /* Reduced font size */
+    }
+
+    h1.text-xl {
+        font-size: 16px !important;
+    }
+
+    h4.text-lg {
+        font-size: 14px;
+        /* Adjusted font size for h4 with text-lg class */
+    }
+
+    .form-input {
+        font-size: 0.875rem;
+        /* Adjust as needed */
+    }
+
+    table th,
+    table td {
+        font-size: 0.75rem;
+        /* Smaller font size for table headers and cells */
+    }
+
+    .mb-1,
+    .mb-2,
+    .mb-4,
+    .mb-6 {
+        font-size: 0.875rem;
+        /* Adjust font size for margin-bottom classes */
+    }
+}
+
+.star-rating {
+    direction: rtl;
+    font-size: 2em;
+    unicode-bidi: bidi-override;
+    display: inline-block;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label.star {
+    color: #ddd;
+    cursor: pointer;
+}
+
+.star-rating label.star:hover,
+.star-rating label.star:hover~label.star,
+.star-rating input[type="radio"]:checked~label.star {
+    color: #ffc107;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+th {
+    width: 35%;
+    border: 1px solid #d1d5db;
+    text-align: center;
+
+}
+
+
+@media (max-width: 768px) {
+    button[type="submit"] {
+        padding: 0.5rem 1rem;
+        /* Adjusted padding */
+        font-size: 0.875rem;
+        /* Smaller font size */
+        width: auto;
+        /* It will take as much width as needed based on the padding and content */
+    }
+}
